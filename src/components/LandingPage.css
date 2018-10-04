@@ -1,0 +1,155 @@
+
+@media screen and (min-width: 640px){
+
+.HomeContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+.Video {
+    filter:brightness(60%)}
+
+.VideoContainer {
+    width: auto;
+    height: 85vh;
+    position:relative;
+    overflow: hidden;
+    
+}
+
+.TitleContainer {
+    left:50%;
+    top:10%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position:absolute;
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: 200;
+}
+
+.TextContainer {
+    left:55%;
+    top:75%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position:absolute;
+}
+
+.AppTitle {
+    font-size: 2.2rem;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 1vh; 
+}
+
+.AppText {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+.PhoneContainer {
+    left:13%;
+    top:72%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position:absolute;
+    height: 350;
+    width: 180;
+}
+
+.Gradient {
+    background-image: linear-gradient(to right, #FB626D ,#F8B44F);
+    height: 60vh;
+    width: 150vw;
+    top:52%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position:absolute;
+    transform: rotate(351deg);
+    opacity: 0.9;
+}
+
+.FormContainer {
+    display: flex;
+    flex-direction: row;
+    left:54%;
+    top:90%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position:absolute;
+}
+
+.InputStyle {
+    border: none;
+    height: 100px;
+    width: 350px;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.InputButtonStyle {
+    border: none;
+    height: 102px;
+    width: 300px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 5px;
+    background-color:#79E892;
+}
+.Footer {
+    
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.FooterContent{ 
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo {
+    margin-left: 40vh;
+    flex: 1;
+    color: orange;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoDot {
+    color: black;
+    font-size: 2rem;
+}
+
+.FooterText {
+    flex: 1;
+    color: black;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.CopyRight {
+    align-self: center;
+    color: gray;
+    font-size: 0.5rem
+}
+}
