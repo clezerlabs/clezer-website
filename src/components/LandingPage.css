@@ -1,6 +1,5 @@
 
-@media screen and (min-width: 640px){
-
+@import '~antd/dist/antd.css';
 .HomeContainer {
     width: 100vw;
     height: 100vh;
@@ -17,6 +16,12 @@
     
 }
 
+.PageTitle{
+    font-size: 4rem;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
 .TitleContainer {
     left:50%;
     top:10%;
@@ -24,18 +29,17 @@
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position:absolute;
-    font-size: 2rem;
-    color: whitesmoke;
-    font-weight: 200;
+
 }
 
 .TextContainer {
     left:55%;
-    top:75%;
+    top:78%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position:absolute;
+    height: auto;
 }
 
 .AppTitle {
@@ -54,19 +58,20 @@
 
 .PhoneContainer {
     left:13%;
-    top:72%;
+    top:65%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position:absolute;
-    height: 350;
-    width: 180;
 }
-
+.PhoneImage {
+    width: auto;
+    height: 1260px;
+}
 .Gradient {
     background-image: linear-gradient(to right, #FB626D ,#F8B44F);
     height: 60vh;
-    width: 150vw;
+    width: 180vw;
     top:52%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -77,8 +82,6 @@
 }
 
 .FormContainer {
-    display: flex;
-    flex-direction: row;
     left:54%;
     top:90%;
     -webkit-transform: translate(-50%, -50%);
@@ -89,23 +92,22 @@
 
 .InputStyle {
     border: none;
-    height: 100px;
+    height: 120px;
     width: 350px;
     color: black;
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
-    margin-left: 5px;
+
 }
 
 .InputButtonStyle {
     border: none;
-    height: 102px;
-    width: 300px;
+    height: 120px;
+    width: 350px;
     color: white;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    margin-left: 5px;
     background-color:#79E892;
 }
 .Footer {
@@ -121,7 +123,6 @@
     flex-direction: row;
     overflow: hidden;
     background-color: white;
-    justify-content: center;
     align-items: center;
 }
 
@@ -152,4 +153,58 @@
     color: gray;
     font-size: 0.5rem
 }
+
+@media screen and (max-width: 2000px) {
+    .TextContainer {
+        left:65%;
+        top:78%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position:absolute;
+        height: auto;
+        width: 65%;
+    }
+    .AppTitle {
+        font-size: 2rem;
+        color: whitesmoke;
+        font-weight: bold;
+        margin-bottom: 1vh; 
+    }
+    
+    .AppText {
+        margin-top: 0;
+        font-size: 1.2rem;
+        color: whitesmoke;
+        font-weight: 300;
+    }
+    
+    .FormContainer {
+        left:64%;
+        top:90%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position:absolute;
+    }
+    .InputStyle {
+        border: none;
+        max-height: 60px;
+        max-width: 160px;
+        width: auto;
+        color: black;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .InputButtonStyle {
+        border: none;
+        max-height: 60px;
+        max-width: 200px;
+        width: auto;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        background-color:#79E892;
+    }   
 }
