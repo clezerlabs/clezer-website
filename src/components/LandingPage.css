@@ -1,19 +1,20 @@
-
 @import '~antd/dist/antd.css';
+
 .HomeContainer {
     width: 100vw;
     height: 100vh;
 }
 
 .Video {
-    filter:brightness(60%)}
+    filter:brightness(60%)
+  }
 
 .VideoContainer {
     width: auto;
     height: 85vh;
     position:relative;
     overflow: hidden;
-    
+
 }
 
 .PageTitle{
@@ -46,7 +47,7 @@
     font-size: 2.2rem;
     color: whitesmoke;
     font-weight: bold;
-    margin-bottom: 1vh; 
+    margin-bottom: 1vh;
 }
 
 .AppText {
@@ -56,13 +57,35 @@
     font-weight: 300;
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 .PhoneContainer {
-    left:13%;
-    top:65%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+
+    left: 3%;
+    top: 25vh;
     position:absolute;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	transform: translatey(0px);
+  	animation: float 3s ease-in-out infinite;
+}
+
+.PhoneContainer > img {
+  width: 30vw;
+  max-width: 500px;
+  height: auto;
+
+
 }
 .PhoneImage {
     width: auto;
@@ -111,13 +134,13 @@
     background-color:#79E892;
 }
 .Footer {
-    
+
     height: 15vh;
     display: flex;
     flex-direction: column;
-    
+
 }
-.FooterContent{ 
+.FooterContent{
     height: 15vh;
     display: flex;
     flex-direction: row;
@@ -153,6 +176,7 @@
     color: gray;
     font-size: 0.5rem
 }
+
 
 @media screen and (max-width: 2000px) {
     .TextContainer {
@@ -208,3 +232,4 @@
         background-color:#79E892;
     }   
 }
+
