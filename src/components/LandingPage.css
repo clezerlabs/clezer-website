@@ -29,7 +29,7 @@
     
     .TitleContainer {
         left:50%;
-        top:10%;
+        top:8%;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -37,8 +37,10 @@
     
     }
 
-
-    
+    .TitleLogo{
+        width: auto;
+        height: 50px;
+    }
     .PhoneContainer {
         top: 100vh;
         position:absolute;
@@ -71,19 +73,16 @@
     
 
     .Footer {
-    
         height: 15vh;
         display: flex;
         flex-direction: column;
-    
+        
     }
     .FooterContent{
-        height: 5vh;
-        display: flex;
-        flex-direction: row;
+        height: 15vh;
         overflow: hidden;
         background-color: white;
-        align-items: center;
+        margin: 0
     }
     
     .Logo {
@@ -208,11 +207,10 @@
         overflow: hidden;
     
     }
-    
-    .PageTitle{
-        font-size: 4rem;
-        color: whitesmoke;
-        font-weight: 600;
+
+    .TitleLogo{
+        width: auto;
+        height: 80px;
     }
     
     .TitleContainer {
@@ -250,30 +248,38 @@
     }
     
     .PhoneContainer > img {
-    width: 30vw;
-    max-width: 900px;
+    width: 25vw;
+    max-width: 700px;
     height: auto;
     
     
     }
-    .PhoneImage {
-        width: auto;
-        height: 1380px;
-    }
+
     .Gradient {
-        background-image: linear-gradient(to right, #FB626D ,#F8B44F);
+        background-image: linear-gradient(to left, #FE674E ,#FDD64D);
         height: 100vh;
-        width: 110vw;
-        top:48%;
+        width: 105vw;
+        top:52%;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         position:absolute;
         transform: rotate(353deg);
-        opacity: 0.9;
+        opacity: 2;
     }
     
-    
+    .GradientOpacity {
+        background-image: linear-gradient(to left, #FE674E ,#FDD64D);
+        height: 100vh;
+        width: 110vw;
+        top:50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position:absolute;
+        transform: rotate(353deg);
+        opacity: 0.6;
+    }
     
     .InputStyle {
         border: none;
@@ -297,29 +303,27 @@
         background-color:#79E892;
     }
     .Footer {
-    
-        height: 10vh;
+        height: 15vh;
         display: flex;
         flex-direction: column;
-    
+        width: 100vh;
+        
     }
     .FooterContent{
-        height: 5vh;
+        margin-left: 50vh;
+        height: 15vh;
         display: flex;
-        flex-direction: row;
+        width: 100vh;
         overflow: hidden;
         background-color: white;
         align-items: center;
+        justify-content: center;
     }
     
     .Logo {
-        margin-left: auto;
-        margin-right: auto;
-        flex: 1;
-        color: orange;
-        font-size: 2rem;
         justify-content: center;
         align-items: center;
+        padding-bottom: 12px;
     }
     
     .LogoDot {
@@ -328,15 +332,13 @@
     }
     
     .FooterText {
-        flex: 1;
         color: black;
-        font-size: 1rem;
+        font-size: 0.8rem;
         justify-content: center;
         align-items: center;
     }
     
     .CopyRight {
-        margin-top: 2vh;
         align-self: center;
         color: gray;
         font-size: 0.5rem
@@ -401,12 +403,7 @@
         text-align: center;
         background-color:#79E892;
     }   
-    .footerLogo {
-        height: 10vh;
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
     .logoTwitter {
         margin-left: 20px;
     }
@@ -522,19 +519,21 @@
         background-color:#79E892;
     }
     .Footer {
-    
         height: 15vh;
         display: flex;
         flex-direction: column;
-    
+        width: 100vh;
+        
     }
     .FooterContent{
+        margin-left: 50vh;
         height: 15vh;
         display: flex;
-        flex-direction: row;
+        width: 100vh;
         overflow: hidden;
         background-color: white;
         align-items: center;
+        justify-content: center;
     }
     
     .Logo {

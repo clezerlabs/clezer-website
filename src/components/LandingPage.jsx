@@ -4,7 +4,8 @@ import homeVid from "../assets/videos/homeVid.mp4";
 import iphone from "../assets/images/iPhone.png"
 import fb from "../assets/images/fb.png"
 import twitter from "../assets/images/twitter.png"
-
+import whiteLogo from "../assets/images/whiteLogo.png";
+import orangeLogo from "../assets/images/orangeLogo.png";
 import { Row, Col } from 'antd';
 import "./LandingPage.css"
 const videoOptions = {
@@ -30,14 +31,16 @@ class LandingPage extends React.Component {
                         videoOptions={videoOptions}
                     />
                     <div className="TitleContainer">
-                        <h2 className="PageTitle">Clezer.</h2>
+                        <img className="TitleLogo" src={whiteLogo} alt=""/>
                     </div>
                     <div className="Gradient">
+                    </div>
+                    <div className="GradientOpacity">
                     </div>
                         <div className="TextContainer">
                         <Row >
                         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24}}>
-                            <h3 className="AppTitle">Book together right from your group chat</h3>
+                            <h3 className="AppTitle">Book together, right from your group chat</h3>
                         </Col>
                         </Row>
                         <Row >
@@ -70,31 +73,29 @@ class LandingPage extends React.Component {
                         
                     </div>
             </div>
-            <div className="Footer">
-                <p className="Logo">Clezer<span className="LogoDot">.</span></p>
-            <Row >
-            <div className="FooterContent">
-                
-                <Col xs={{ span: 6, offset: 1 }} md={{ span: 4, offset: 5 }} >
-                <p className="FooterText">40 rue de l'arsenal  33300 Bordeaux</p>
-                </Col>
-                
-                
-                <Col xs={{ span: 6, offset: 2}} md={{ span: 4 }} ><p className="FooterText">hello@collective.com</p>
-                </Col>
-                
-                <Col xs={{ span: 6, offset: 2 }} md={{ span: 4   }} >
-                <p className="FooterText">+33 6 23 56 12 87</p>
-                </Col>
-            </div>
-            </Row>
-                <div className="footerLogo">
+            <div className="Footer"> 
+            <Row gutter={0}>
+                <div className="FooterContent">
+                    <Col xs={{span: 16, offset: 8}} sm={{ span: 1, offset: -8 }} >
+                    <img className="Logo" src={orangeLogo} alt=""/>
+                    </Col>
+                    <Col xs={{ span: 6, offset: 1}} sm={{ span: 3, offset:3}} >
+                    <p className="FooterText">40 rue de l'arsenal  33 300 Bordeaux</p>
+                    </Col>
+                    <Col xs={{ span: 2, offset: 2}} sm={{ span: 1}} >
+                    <p className="FooterText">hello@collective.com</p>
+                    </Col>
+                    <Col xs={{ span: 7, offset: 5 }} sm={{ span: 3 }} >
+                    <p className="FooterText">+33 6 23 56 12 87</p>
+                    </Col>
+                    <Col xs={{ span: 14, offset: 10 }} sm={{ span: 1 }} >
                     <a className="logoFb" href="https://www.facebook.com/clezer/"><img className="logoFb" src={fb} alt="facebookLogo"/></a>
                     <a className="logoTwitter" href="https://twitter.com/clezerapp?lang=fr"><img className="logoTwitter" src={twitter} alt="facebookLogo"/></a>
+                    </Col>
                 </div>
+            </Row>
                 <p className="CopyRight">© 2018 Clezer Financial Technologies. All Rights Reserved.</p>
             </div>
-            
         </div>
 
         );
