@@ -16,5 +16,5 @@
 # Node.js dependencies:
 node_modules/
 
-# Heavy videos and media
-src/assets/videos/homeVid.mp4
+# Videos can not be deployed because some are over 32MB
+*.mp4
