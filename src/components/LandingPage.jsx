@@ -71,11 +71,7 @@ class LandingPage extends React.Component {
                     </div>
             </div>
             <div className="Footer">
-            <Row>
-                <Col xs={{ span: 10, offset: 9}} >
                 <p className="Logo">Clezer<span className="LogoDot">.</span></p>
-                </Col>
-            </Row>
             <Row >
             <div className="FooterContent">
                 
@@ -90,18 +86,13 @@ class LandingPage extends React.Component {
                 <Col xs={{ span: 6, offset: 2 }} md={{ span: 4   }} >
                 <p className="FooterText">+33 6 23 56 12 87</p>
                 </Col>
-                
-            
-
             </div>
             </Row>
                 <div className="footerLogo">
                     <a className="logoFb" href="https://www.facebook.com/clezer/"><img className="logoFb" src={fb} alt="facebookLogo"/></a>
                     <a className="logoTwitter" href="https://twitter.com/clezerapp?lang=fr"><img className="logoTwitter" src={twitter} alt="facebookLogo"/></a>
                 </div>
-                    
-           
-                <p className="CopyRight">© CLEZER Financial Technologie INC. All Rights Reserved.</p>
+                <p className="CopyRight">© 2018 Clezer Financial Technologies. All Rights Reserved.</p>
             </div>
             
         </div>

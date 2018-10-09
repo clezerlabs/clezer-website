@@ -298,13 +298,13 @@
     }
     .Footer {
     
-        height: 15vh;
+        height: 10vh;
         display: flex;
         flex-direction: column;
     
     }
     .FooterContent{
-        height: 15vh;
+        height: 5vh;
         display: flex;
         flex-direction: row;
         overflow: hidden;
@@ -313,7 +313,8 @@
     }
     
     .Logo {
-        margin-left: 40vh;
+        margin-left: auto;
+        margin-right: auto;
         flex: 1;
         color: orange;
         font-size: 2rem;
@@ -335,6 +336,7 @@
     }
     
     .CopyRight {
+        margin-top: 2vh;
         align-self: center;
         color: gray;
         font-size: 0.5rem
@@ -399,6 +401,15 @@
         text-align: center;
         background-color:#79E892;
     }   
+    .footerLogo {
+        height: 10vh;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logoTwitter {
+        margin-left: 20px;
+    }
 }
 
 
