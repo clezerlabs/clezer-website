@@ -47,17 +47,19 @@ class LandingPage extends React.Component {
                
             </section>
             
-          </div> 
-          <div id="footer">
-            <img className="Logo" src={orangeLogo} alt=""/>
-                    <p className="Adress">40 rue de l'arsenal  33 300 Bordeaux</p>
-                    <p className="FooterText">hello@collective.com</p>
-                    <p className="FooterText">+33 6 23 56 12 87</p>
-                    
-                    <a  rel="noopener noreferrer" target="_blank" className="logoFb" href="https://www.facebook.com/clezer/"><img className="logoFb" src={fb} alt="facebookLogo"/></a>
-                    <a className="logoTwitter" href="https://twitter.com/clezerapp?lang=fr"><img className="logoTwitter" src={twitter} alt="facebookLogo"/></a>
-           
-          </div> 
+            </div> 
+            <section style={{height:"20vh", zIndex: 3}}>
+            <div id="footer">
+                <img className="Logo" src={orangeLogo} alt=""/>
+                        <p className="Adress">40 rue de l'arsenal  33 300 Bordeaux</p>
+                        <p className="FooterText">hello@collective.com</p>
+                        <p className="FooterText">+33 6 23 56 12 87</p>
+                        
+                        <a  rel="noopener noreferrer" target="_blank" className="logoFb" href="https://www.facebook.com/clezer/"><img className="logoFb" src={fb} alt="facebookLogo"/></a>
+                        <a className="logoTwitter" href="https://twitter.com/clezerapp?lang=fr"><img className="logoTwitter" src={twitter} alt="facebookLogo"/></a>
+            
+            </div> 
+            </section>
           </div>
         );
     }

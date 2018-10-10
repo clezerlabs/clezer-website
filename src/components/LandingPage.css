@@ -11,7 +11,7 @@
     
   }
   #Page {
-      height: 120vh;
+      height: 125vh;
   }
   #container {
     overflow: hidden;
@@ -39,13 +39,13 @@
     font-family: 'proxima-nova', Helvetica;
   }
   #container {
-    height: 110vh;
+    height: 120vh;
   }
   #overlay {
     position: absolute;
     top: 0; right: 0; left: 0; bottom: 0;
     background: rgba(0,0,0,0.5);
-    height: 120vh;
+    height: 100vh;
   }
 
   .TitleContainer {
@@ -117,20 +117,11 @@ height: 8vh;
     display: flex;
     flex-direction: row;
     /* Vertical center */
-    top:55%;
+    top:50%;
     transform: translateY(0%);
-    height: 100vh;
+    height: 115vh;
   }
-  #footer {
-    z-index: 2;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    /* Vertical center */
-    top:55%;
-    transform: translateY(0%);
-    height: 100vh;
-  }
+
   #main_content #head {
     text-transform: uppercase;
     text-align: left;
@@ -158,8 +149,12 @@ height: 8vh;
     transform: translateY(0%);
     z-index: 2;
     width: auto;
-    margin-top: 50px; 
+    margin-top: 40px; 
+    height: 50vh;
   }
+  #links > form {
+    height: 60vh;
+  } 
   #links .InputStyle {
     border: none;
     min-height: 80px;
@@ -178,17 +173,18 @@ height: 8vh;
     font-weight: bold;
     text-align: center;
     background-color:#79E892;
+    overflow: scroll;
+   
   }
   #footer {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 110%; 
-    background-color: black;
+    position: relative;
+    top: 120vh; 
+    background-color: white;
     height: 10vh;
     width: 100vw;
-    z-index: 2;
-    background-color: white;
+    z-index: 4;
     text-align: center;
     align-items: center;
     justify-content: space-around;
