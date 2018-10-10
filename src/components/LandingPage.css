@@ -1,645 +1,213 @@
-@import '~antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Muli:bold');
 
-/* =========================================== MOBILE VERSION =========================================== */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .HomeContainer {
-        width: 100vw;
-        height: 100vh;
-    }
-    
-    .Video {
-        filter:brightness(60%)
-    }
-    
-    .VideoContainer {
-        width: auto;
-        height: 160vh;
-        position:relative;
-        overflow: hidden;
-    }
-    .firstPart{
-        height: 20vh;
-    }
-    .PageTitle{
-        font-size: 4rem;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    
-    .TitleContainer {
-        left:50%;
-        top:8%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-    
-    }
 
-    .TitleLogo{
-        width: auto;
-        height: 50px;
-    }
-    .PhoneContainer {
-        top: 100vh;
-        position:absolute;
-        box-sizing: border-box;
-        overflow: hidden;
-        transform: translatey(0px);
-        background-color: whitesmoke;
-        height: 60vh;
-    }
+* {
+    margin: 0; padding: 0;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
     
-    .PhoneContainer > img {
-        margin-top: 8vh;
-    width: 100vw;
-    max-width: 900px;
+  }
+  #Page {
+      height: 120vh;
+  }
+  #container {
+    overflow: hidden;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    
+  }
+  #background_video {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    height: 100%; width: 100%;
+  }
+  #video_cover {
+    position: absolute;
+    width: 100%; height: 100%;
+    
+    background-size: cover;
+    background-position: center;
+  }
+  /* Demo page specific styles */
+  body {
+    text-align: center;
+    font-family: 'proxima-nova', Helvetica;
+  }
+  #container {
+    height: 110vh;
+  }
+  #overlay {
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    height: 120vh;
+  }
+
+  .TitleContainer {
+    z-index: 2;
+    position: relative;
+    /* Vertical center */
+    top: 10%;
+    transform: translateY(-50%);
+}
+.TitleContainer > img {
+height: 8vh;
+}
+.Gradient {
+    background-image: linear-gradient(to left, #FE674E ,#FDD64D);
     height: 100vh;
-    }
-
-    .Gradient {
-        background-image: linear-gradient(to right, #FB626D ,#F8B44F);
-        min-width: 250vh;
-        height: 150vh;
-        width: 260vw;
-        top:5%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        transform: rotate(340deg);
-        opacity: 0.9;
-    }
+    width: 120vw;
+    top:52%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position:absolute;
+    transform: rotate(353deg);
+    z-index: 2;
     
+}
+.GradientOpacity {
+    background-image: linear-gradient(to left, #FE674E ,#FDD64D);
+    height: 100vh;
+    width: 120vw;
+    top:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position:absolute;
+    transform: rotate(353deg);
+    opacity: 0.6;
+    z-index: 1;
     
-    .TextContainer {
-        left:50%;
-        top:38%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        min-height: 130px;
-        max-width: 300px;
-        width: 100vh;
-        height: 15vh;
-        bottom: 10vh;
+}
+.PhoneContainer {
+    z-index: 2;
+    width: 80vh;
+    max-width: 2000px;
+    position: relative;
+    box-sizing: border-box;
+    /* Vertical center */
+    top: -20%;
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translatey(-50px);
     }
-
-    .AppTitle {
-        font-size: 1rem;
-        color: whitesmoke;
-        font-weight: bold;
-        margin-bottom: 1vh; 
-        font-family: 'Muli', sans-serif;
-        position: relative;
-        
+    50% {
+        transform: translatey(-60px);
     }
-    
-    .AppText {
-        margin-top: 0;
-        font-size: 0.8rem;
-        color: whitesmoke;
-        font-weight: 300;
-        font-family: 'Montserrat', sans-serif;
-        min-height: 10vh;
-        height: 10vh;
-        position: relative;
-        
-    }
-    .FormContainer {
-        left: 50%;
-        top:47%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        width: 90vw;
-        height: 10vh;
-        
-    }
-    .InputStyle {
-        border: none;
-        max-height: 140px;
-        max-width: 250px;
-        width: 45vw;
-        height: 10vh;
-        color: black;
-        font-size: 1rem;
-        text-align: center;
-        bottom: 0px;
-        position:relative;
-        top: 30px;
-    }
-    .InputButtonStyle {
-        border: none;
-        height: 140px;
-        max-width: 500px;
-        width: 91vw;
-        height: 10vh;
-        color: white;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
-        background-color:#79E892;
-        margin-top: 5px;
-        position:relative;
-        top: 30px;
-    }   
-
-    .Footer {
-        height:20vh;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .FooterContent{
-        height: 20vh;
-        overflow: hidden;
-        background-color: white;
-        margin: 15px;
-    }
-    
-    .Logo {
-        color: orange;
-        font-size: 2rem;
-        justify-content: center;
-        align-items: center;
-        height: 5vh;
-    }
-    
-    .Adress {
-        margin-top: 2vh;
-        margin-bottom: 3vh;
-        color: black;
-        font-size: 0.5rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .FooterText {
-        margin-top: 3vh;
-        margin-bottom: 4vh;
-        color: black;
-        font-size: 0.5rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .CopyRight {
-        align-self: center;
-        color: gray;
-        font-size: 0.5rem;
-        margin-top: 1vh;
-    }
-    
-
-    .footerLogo {
-        height: 10vh;
-        width: auto;
-    }
-    .Adress {
-        font-size: 0.5rem;
-    }
-    .logoTwitter {
-        margin-left: 20px;
-    }
-    }
-
-
-/* =========================================== LARGE SCREEN VERSION =========================================== */
-
-@media only screen  and (min-width : 1824px) {
-    .HomeContainer {
-        width: 100vw;
-        height: 100vh;
-    }
-    
-    .Video {
-        filter:brightness(60%)
-    }
-    
-    .VideoContainer {
-        width: auto;
-        height: 85vh;
-        position:relative;
-        overflow: hidden;
-    
-    }
-
-    .TitleLogo{
-        width: auto;
-        height: 80px;
-    }
-    
-    .TitleContainer {
-        left:50%;
-        top:10%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-    
-    }
-
-    
-    @keyframes float {
-        0% {
-            transform: translatey(0px);
-        }
-        50% {
-            transform: translatey(-30px);
-        }
-        100% {
-            transform: translatey(0px);
-        }
-    }
-    
-    .PhoneContainer {
-    
-        left: 1%;
-        top: 25vh;
-        position:absolute;
-        box-sizing: border-box;
-        overflow: hidden;
-        transform: translatey(0px);
-        animation: float 3s ease-in-out infinite;
-    }
-    
-    .PhoneContainer > img {
-    width: 25vw;
-    max-width: 700px;
-    height: auto;
-    
-    
-    }
-
-    .Gradient {
-        background-image: linear-gradient(to left, #FE674E ,#FDD64D);
-        height: 100vh;
-        width: 105vw;
-        top:52%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        transform: rotate(353deg);
-        opacity: 2;
-    }
-    
-    .GradientOpacity {
-        background-image: linear-gradient(to left, #FE674E ,#FDD64D);
-        height: 100vh;
-        width: 110vw;
-        top:50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        transform: rotate(353deg);
-        opacity: 0.6;
-    }
-    
-    .InputStyle {
-        border: none;
-        height: 150px;
-        width: 350px;
-        color: black;
-        font-size: 4rem;
-        text-align: center;
-    
-    }
-    
-    .InputButtonStyle {
-        border: none;
-        height: 120px;
-        width: 20vw;
-        max-width: 350px;
-        color: white;
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
-        background-color:#79E892;
-    }
-    .Footer {
-        height: 15vh;
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-
-        
-    }
-    .FooterContent{
-        margin-left:auto;
-        margin-right:auto;
-        height: 15vh;
-        display: flex;
-        width: 60%;
-        background-color: white;
-        align-items: center;
-    }
-    
-    .Logo {
-
-        align-items: center;
-        padding-bottom: 12px;
-    }
-    
-    .LogoDot {
-        color: black;
-        font-size: 2rem;
-    }
-    
-    .FooterText {
-        color: black;
-        font-size: 0.8rem;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .CopyRight {
-        align-self: center;
-        color: gray;
-        font-size: 0.5rem
-    }
-    
-    
-    .TextContainer {
-        left:58%;
-        top:70%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        width: 100vh;
-        height: auto;
-    }
-    .AppTitle {
-        font-size: 2.8rem;
-        color: whitesmoke;
-        font-weight: bold;
-        margin-bottom: 1vh; 
-        font-family: 'Muli', sans-serif;
-    }
-    
-    .AppText {
-        margin-top: 0;
-        font-size: 1.8rem;
-        color: whitesmoke;
-        font-weight: 300;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    .FormContainer {
-        left:58%;
-        top:90%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        width: 51vw;
-        height: auto;
-    }
-    .InputStyle {
-        border: none;
-        max-height: 140px;
-        max-width: 300px;
-        width: 20vw;
-        height: 10vh;
-        color: black;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    .InputButtonStyle {
-        border: none;
-        max-height: 140px;
-        max-width: 300px;
-        width: 20vw;
-        height: 10vh;
-        color: white;
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
-        background-color:#79E892;
-    }   
-
-    .footerLogo {
-        
-    }
-    .logoTwitter {
-        margin-left: 20px;
+    100% {
+        transform: translatey(-50px);
     }
 }
+.PhoneContainer > img {
+    width: 50vh;
+    max-width: 1024px;
 
-/* =========================================== LAPTOP VERSION =========================================== */
-
-@media only screen  and (min-width : 1024px) and (max-width: 1824px ){
-    .HomeContainer {
-        width: 100vw;
-        height: 100vh;
-    }
-    .Video {
-        filter:brightness(60%)
-    }
-    .VideoContainer {
-        width: auto;
-        height: 85vh;
-        position:relative;
-        overflow: hidden;
-    
-    }
-    .PageTitle{
-        font-size: 4rem;
-        color: whitesmoke;
-        font-weight: 600;
-    }
-    .TitleContainer {
-        left:50%;
-        top:10%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-    
-    }
-    @keyframes float {
-        0% {
-            transform: translatey(0px);
-        }
-        50% {
-            transform: translatey(-30px);
-        }
-        100% {
-            transform: translatey(0px);
-        }
-    }
-    
-    .PhoneContainer {
-    
-        left: 1%;
-        top: 25vh;
-        position:absolute;
-        box-sizing: border-box;
-        overflow: hidden;
-        transform: translatey(0px);
-        animation: float 3s ease-in-out infinite;
-    }
-    
-    .PhoneContainer > img {
-    width: 30vw;
-    max-width: 900px;
-    height: auto;
-    
-    
-    }
-    .PhoneImage {
-        width: auto;
-        height: 1380px;
-    }
-    .Gradient {
-        background-image: linear-gradient(to left, #FE674E ,#FDD64D);
-        height: 100vh;
-        width: 110vw;
-        top:48%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        transform: rotate(353deg);
-        opacity: 0.9;
-    }
-    
-    
-    
-    .InputStyle {
-        border: none;
-        height: 150px;
-        width: 350px;
-        color: black;
-        font-size: 4rem;
-        text-align: center;
-    
-    }
-    
-    .InputButtonStyle {
-        border: none;
-        height: 120px;
-        width: 20vw;
-        max-width: 350px;
-        color: white;
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
-        background-color:#79E892;
-    }
-    .Footer {
-        height: 15vh;
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-    }
-    .FooterContent{
-        height: 15vh;
-        display: flex;
-        background-color: white;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .Logo {
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 12px;
-    }
-    
-    .LogoDot {
-        color: black;
-        font-size: 2rem;
-    }
-    
-    .FooterText {
-        flex: 1;
-        color: black;
-        font-size: 0.8rem;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .CopyRight {
-        align-self: center;
-        color: gray;
-        font-size: 0.5rem
-    }
-    
-    
-    .TextContainer {
-        left:64%;
-        top:70%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        width: 90vh;
-        height: auto;
-    }
-
-    .AppTitle {
-        font-size: 2.2rem;
-        color: whitesmoke;
-        font-weight: bold;
-        margin-bottom: 1vh; 
-        font-family: 'Muli', sans-serif;
-    }
-    
-    .AppText {
-        margin-top: 0;
-        font-size: 1.4rem;
-        color: whitesmoke;
-        font-weight: 300;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    .FormContainer {
-        left:66%;
-        top:90%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        width: 95vh;
-        height: auto;
-    }
-    .InputStyle {
-        border: none;
-        max-height: 140px;
-        max-width: 250px;
-        width: 17vw;
-        height: 10vh;
-        color: black;
-        font-size: 1rem;
-        text-align: center;
-    }
-    .InputButtonStyle {
-        border: none;
-        max-height: 140px;
-        max-width: 300px;
-        width: 20vw;
-        height: 10vh;
-        color: white;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
-        background-color:#79E892;
-    } 
-    .footerLogo {
-        align-items: center;
-
-    }
-    .logoTwitter {
-        margin-left: 20px;
-    }
 }
+  #main_content {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* Vertical center */
+    top:55%;
+    transform: translateY(0%);
+    height: 100vh;
+  }
+  #footer {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* Vertical center */
+    top:55%;
+    transform: translateY(0%);
+    height: 100vh;
+  }
+  #main_content #head {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+  #main_content .sub_head {
+    font-weight: bolder;
+    font-family: 'Muli';
+    color: white;
+    font-size: 2rem;
+  }
+  #main_content .info {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+    font-family: 'Montserrat', Helvetica;
+    z-index: 2;
+    text-align: left;
+    width: 50vw;
+
+  }
+  #links {
+    transform: translateY(0%);
+    z-index: 2;
+    width: auto;
+    margin-top: 50px; 
+  }
+  #links .InputStyle {
+    border: none;
+    min-height: 80px;
+    height: 120px;
+    width: 350px;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    margin:0 5px 5px 0;
+  }
+  #links .InputButtonStyle {
+    height: 120px;
+    width: 350px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color:#79E892;
+  }
+  #footer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 110%; 
+    background-color: black;
+    height: 10vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+  #footer a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    margin: 10px;
+    font-size: 12px;
+  }
+  #footer .Logo {
+    height: 5vh;
+    width: auto;
+  }
+  #footer a:first-child {
+    float: left;
+  }
+  #footer a:last-child {
+    float: right;
+  }
