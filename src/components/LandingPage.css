@@ -111,7 +111,7 @@ height: 8vh;
     max-width: 1024px;
 
 }
-  #main_content {
+#main_content {
     z-index: 2;
     position: relative;
     display: flex;
@@ -120,21 +120,19 @@ height: 8vh;
     top:50%;
     transform: translateY(0%);
     height: 115vh;
-  }
+}
 
-  #main_content #head {
+#main_content #head {
     text-transform: uppercase;
     text-align: left;
 }
-
-
-  #main_content .sub_head {
+#main_content .sub_head {
     font-weight: bolder;
     font-family: 'Muli';
     color: white;
     font-size: 2rem;
-  }
-  #main_content .info {
+}
+#main_content .info {
     color: white;
     font-size: 1.5rem;
     font-weight: 500;
@@ -207,3 +205,159 @@ height: 8vh;
   #footer a:last-child {
     float: right;
   }
+
+  @media only screen and (max-device-width: 480px) {
+    #container {
+        height: 180vh;
+      }
+    #main_content {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        /* Vertical center */
+        top:38%;
+        transform: translateY(0%);
+        height: 115vh;
+        width: 100vw;
+    }
+    .Gradient {
+        background-image: linear-gradient(to left, #FE674E ,#FDD64D);
+        height: 150vh;
+        width: 180vw;
+        top:32%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position:absolute;
+        transform: rotate(340deg);
+        z-index: 2;
+        
+    }
+    .GradientOpacity {
+        background-image: linear-gradient(to left, #FE674E ,#FDD64D);
+        height: 150vh;
+        width: 180vw;
+        top:30%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position:absolute;
+        transform: rotate(340deg);
+        opacity: 0.6;
+        z-index: 1;
+        
+    }
+    #main_content #head {
+        text-transform: uppercase;
+        text-align: left;
+        margin-left: 5%;
+
+    }
+    #main_content .sub_head {
+        font-weight: bolder;
+        font-family: 'Muli';
+        color: white;
+        font-size: 1.4rem;
+    }
+    #main_content .info {
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 10px;
+        font-family: 'Montserrat', Helvetica;
+        z-index: 2;
+        text-align: left;
+        width: 100vw;
+    
+      }
+    .PhoneContainer {
+        z-index: 2;
+        width: 60vh;
+        height: 100vh;
+        max-width: 2000px;
+        position: absolute ;
+        box-sizing: border-box;
+        /* Vertical center */   
+        animation: float 4s ease-in-out infinite;
+        top: 50%;
+        background-color: wheat;
+        left: auto;
+        right: auto;
+    }
+    .PhoneContainer > img {
+        margin-top: 20px;
+        width: 50vh;
+        max-width: 1024px;
+    
+    }
+    #links {
+        transform: translateY(0%);
+        z-index: 2;
+        width: auto;
+        margin-top: 40px; 
+        height: 50vh;
+      }
+      #links > form {
+        height: 60vh;
+      } 
+      #links .InputStyle {
+        border: none;
+        height: 80px;
+        width: 175px;
+        color: black;
+        font-size: 1rem;
+        text-align: center;
+        margin:0 5px 5px 5px;
+      }
+      #links .InputButtonStyle {
+        height: 80px;
+        width: 360px;
+        margin-left: 5px;
+        margin-right: auto;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        background-color:#79E892;
+        overflow: scroll;
+       
+      }
+      #footer {
+        display: flex;
+        position: relative;
+        top: 180vh; 
+        background-color: white;
+        z-index: 4;
+        text-align: center;
+        font-size: 10px;
+        flex-flow: wrap;
+    }
+    #footer .Logo {
+       
+        width: 50vw;
+        margin-left: 26%;
+        margin-right: auto;
+      }
+      #footer p {
+        
+        flex: 2;
+        color: black;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 12px;
+      }
+      #footer .Adress {
+        margin-left: 18%
+      }
+      #footer .logoFb {
+        margin-left: 20%
+      }
+      #footer a {
+          display: flex;
+          flex-direction: row;
+          width: auto;
+          height: 5vh;
+          
+      }
+}
