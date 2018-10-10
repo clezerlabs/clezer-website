@@ -18,9 +18,10 @@
         height: 160vh;
         position:relative;
         overflow: hidden;
-    
     }
-    
+    .firstPart{
+        height: 20vh;
+    }
     .PageTitle{
         font-size: 4rem;
         color: whitesmoke;
@@ -60,9 +61,10 @@
 
     .Gradient {
         background-image: linear-gradient(to right, #FB626D ,#F8B44F);
+        min-width: 250vh;
         height: 150vh;
-        width: 250vw;
-        top:20%;
+        width: 260vw;
+        top:5%;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -71,6 +73,81 @@
         opacity: 0.9;
     }
     
+    
+    .TextContainer {
+        left:50%;
+        top:38%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position:absolute;
+        min-height: 130px;
+        max-width: 300px;
+        width: 100vh;
+        height: 15vh;
+        bottom: 10vh;
+    }
+
+    .AppTitle {
+        font-size: 1rem;
+        color: whitesmoke;
+        font-weight: bold;
+        margin-bottom: 1vh; 
+        font-family: 'Muli', sans-serif;
+        position: relative;
+        
+    }
+    
+    .AppText {
+        margin-top: 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        min-height: 10vh;
+        height: 10vh;
+        position: relative;
+        
+    }
+    .FormContainer {
+        left: 50%;
+        top:47%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position:absolute;
+        width: 90vw;
+        height: 10vh;
+        
+    }
+    .InputStyle {
+        border: none;
+        max-height: 140px;
+        max-width: 250px;
+        width: 45vw;
+        height: 10vh;
+        color: black;
+        font-size: 1rem;
+        text-align: center;
+        bottom: 0px;
+        position:relative;
+        top: 30px;
+    }
+    .InputButtonStyle {
+        border: none;
+        height: 140px;
+        max-width: 500px;
+        width: 91vw;
+        height: 10vh;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        background-color:#79E892;
+        margin-top: 5px;
+        position:relative;
+        top: 30px;
+    }   
 
     .Footer {
         height:20vh;
@@ -93,15 +170,21 @@
         height: 5vh;
     }
     
-    .LogoDot {
+    .Adress {
+        margin-top: 2vh;
+        margin-bottom: 3vh;
         color: black;
-        font-size: 2rem;
+        font-size: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
-    
+
     .FooterText {
-        flex: 1;
+        margin-top: 3vh;
+        margin-bottom: 4vh;
         color: black;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -114,73 +197,13 @@
         margin-top: 1vh;
     }
     
-    
-    .TextContainer {
-        left:50%;
-        top:40%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        max-width: 300px;
-        width: 100vh;
-        height: auto;
-    }
 
-    .AppTitle {
-        font-size: 1rem;
-        color: whitesmoke;
-        font-weight: bold;
-        margin-bottom: 1vh; 
-        font-family: 'Muli', sans-serif;
-    }
-    
-    .AppText {
-        margin-top: 0;
-        font-size: 0.8rem;
-        color: whitesmoke;
-        font-weight: 300;
-        font-family: 'Montserrat', sans-serif;
-    }
-    .FormContainer {
-        left: 50%;
-        top:52%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position:absolute;
-        width: 90vw;
-        height: 15vh;
-        
-    }
-    .InputStyle {
-        border: none;
-        max-height: 140px;
-        max-width: 250px;
-        width: 45vw;
-        height: 10vh;
-        color: black;
-        font-size: 1rem;
-        text-align: center;
-    }
-    .InputButtonStyle {
-        border: none;
-        max-height: 140px;
-        max-width: 500px;
-        width: 91vw;
-        height: 10vh;
-        color: white;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
-        background-color:#79E892;
-        margin-top: 5px;
-    }   
     .footerLogo {
         height: 10vh;
         width: auto;
-        margin-left: auto;
-        margin-right: auto;
+    }
+    .Adress {
+        font-size: 0.5rem;
     }
     .logoTwitter {
         margin-left: 20px;

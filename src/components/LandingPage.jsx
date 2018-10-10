@@ -33,10 +33,12 @@ class LandingPage extends React.Component {
                     <div className="TitleContainer">
                         <img className="TitleLogo" src={whiteLogo} alt=""/>
                     </div>
+                    <div className="firstPart">
                     <div className="Gradient">
                     </div>
                     <div className="GradientOpacity">
                     </div>
+                    
                         <div className="TextContainer">
                         <Row >
                         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24}}>
@@ -72,23 +74,24 @@ class LandingPage extends React.Component {
                             </form>
                         
                     </div>
+                    </div>
             </div>
             <div className="Footer"> 
             <Row>
                 <div className="FooterContent">
-                    <Col xs={{span: 16, offset: 8}} sm={{ span: 3, offset: 2 }} md={{ span: 2, offset: 2 }} >
+                    <Col xs={{span: 17, offset: 7}} sm={{ span: 3, offset: 2 }} md={{ span: 2, offset: 2 }} >
                     <img className="Logo" src={orangeLogo} alt=""/>
                     </Col>
-                    <Col xs={{ span: 6, offset: 1}} sm={{ span: 4, offset: 2}} md={{ span: 4}} >
-                    <p className="FooterText">40 rue de l'arsenal  33 300 Bordeaux</p>
+                    <Col xs={{ span: 5, offset: 2}} sm={{ span: 4, offset: 2}} md={{ span: 4}} >
+                    <p className="Adress">40 rue de l'arsenal  33 300 Bordeaux</p>
                     </Col>
-                    <Col xs={{ span: 2, offset: 2}} sm={{ span: 1}} md={{ span: 1}} >
+                    <Col xs={{ span: 4, offset: 2}} sm={{ span: 1}} md={{ span: 1}} >
                     <p className="FooterText">hello@collective.com</p>
                     </Col>
-                    <Col xs={{ span: 7, offset: 5 }} sm={{ span: 4, offset: 2 }} md={{ span: 2, offset: 2 }} >
+                    <Col xs={{ span: 6, offset: 4 }} sm={{ span: 4, offset: 2 }} md={{ span: 2, offset: 2 }} >
                     <p className="FooterText">+33 6 23 56 12 87</p>
                     </Col>
-                    <Col xs={{ span: 14, offset: 10 }} sm={{ span:1 }} md={{ span: 2, offset: 2}} >
+                    <Col xs={{ span: 14, offset: 9 }} sm={{ span:1 }} md={{ span: 2, offset: 2}} >
                     <div className="footerLogo">
                     <a className="logoFb" href="https://www.facebook.com/clezer/"><img className="logoFb" src={fb} alt="facebookLogo"/></a>
                     <a className="logoTwitter" href="https://twitter.com/clezerapp?lang=fr"><img className="logoTwitter" src={twitter} alt="facebookLogo"/></a>
