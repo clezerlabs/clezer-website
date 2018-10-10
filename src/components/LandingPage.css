@@ -73,16 +73,16 @@
     
 
     .Footer {
-        height: 15vh;
+        height:20vh;
         display: flex;
         flex-direction: column;
         
     }
     .FooterContent{
-        height: 15vh;
+        height: 20vh;
         overflow: hidden;
         background-color: white;
-        margin: 0
+        margin: 15px;
     }
     
     .Logo {
@@ -306,22 +306,22 @@
         height: 15vh;
         display: flex;
         flex-direction: column;
-        width: 100vh;
+        width: 100vw;
+
         
     }
     .FooterContent{
-        margin-left: 50vh;
+        margin-left:auto;
+        margin-right:auto;
         height: 15vh;
         display: flex;
-        width: 100vh;
-        overflow: hidden;
+        width: 60%;
         background-color: white;
         align-items: center;
-        justify-content: center;
     }
     
     .Logo {
-        justify-content: center;
+
         align-items: center;
         padding-bottom: 12px;
     }
@@ -404,12 +404,13 @@
         background-color:#79E892;
     }   
 
+    .footerLogo {
+        
+    }
     .logoTwitter {
         margin-left: 20px;
     }
 }
-
-
 
 /* =========================================== LAPTOP VERSION =========================================== */
 
@@ -418,11 +419,9 @@
         width: 100vw;
         height: 100vh;
     }
-    
     .Video {
         filter:brightness(60%)
     }
-    
     .VideoContainer {
         width: auto;
         height: 85vh;
@@ -430,13 +429,11 @@
         overflow: hidden;
     
     }
-    
     .PageTitle{
         font-size: 4rem;
         color: whitesmoke;
         font-weight: 600;
     }
-    
     .TitleContainer {
         left:50%;
         top:10%;
@@ -446,8 +443,6 @@
         position:absolute;
     
     }
-
-    
     @keyframes float {
         0% {
             transform: translatey(0px);
@@ -483,7 +478,7 @@
         height: 1380px;
     }
     .Gradient {
-        background-image: linear-gradient(to right, #FB626D ,#F8B44F);
+        background-image: linear-gradient(to left, #FE674E ,#FDD64D);
         height: 100vh;
         width: 110vw;
         top:48%;
@@ -522,27 +517,20 @@
         height: 15vh;
         display: flex;
         flex-direction: column;
-        width: 100vh;
-        
+        width: 100vw;
     }
     .FooterContent{
-        margin-left: 50vh;
         height: 15vh;
         display: flex;
-        width: 100vh;
-        overflow: hidden;
         background-color: white;
         align-items: center;
-        justify-content: center;
+        width: 100%;
     }
     
     .Logo {
-        margin-left: 40vh;
-        flex: 1;
-        color: orange;
-        font-size: 2rem;
         justify-content: center;
         align-items: center;
+        padding-bottom: 12px;
     }
     
     .LogoDot {
@@ -553,7 +541,7 @@
     .FooterText {
         flex: 1;
         color: black;
-        font-size: 1rem;
+        font-size: 0.8rem;
         justify-content: center;
         align-items: center;
     }
@@ -623,5 +611,12 @@
         font-weight: bold;
         text-align: center;
         background-color:#79E892;
-    }   
+    } 
+    .footerLogo {
+        align-items: center;
+
+    }
+    .logoTwitter {
+        margin-left: 20px;
+    }
 }

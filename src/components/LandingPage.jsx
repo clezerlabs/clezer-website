@@ -74,23 +74,25 @@ class LandingPage extends React.Component {
                     </div>
             </div>
             <div className="Footer"> 
-            <Row gutter={0}>
+            <Row>
                 <div className="FooterContent">
-                    <Col xs={{span: 16, offset: 8}} sm={{ span: 1, offset: -8 }} >
+                    <Col xs={{span: 16, offset: 8}} sm={{ span: 3, offset: 2 }} md={{ span: 2, offset: 2 }} >
                     <img className="Logo" src={orangeLogo} alt=""/>
                     </Col>
-                    <Col xs={{ span: 6, offset: 1}} sm={{ span: 3, offset:3}} >
+                    <Col xs={{ span: 6, offset: 1}} sm={{ span: 4, offset: 2}} md={{ span: 4}} >
                     <p className="FooterText">40 rue de l'arsenal  33 300 Bordeaux</p>
                     </Col>
-                    <Col xs={{ span: 2, offset: 2}} sm={{ span: 1}} >
+                    <Col xs={{ span: 2, offset: 2}} sm={{ span: 1}} md={{ span: 1}} >
                     <p className="FooterText">hello@collective.com</p>
                     </Col>
-                    <Col xs={{ span: 7, offset: 5 }} sm={{ span: 3 }} >
+                    <Col xs={{ span: 7, offset: 5 }} sm={{ span: 4, offset: 2 }} md={{ span: 2, offset: 2 }} >
                     <p className="FooterText">+33 6 23 56 12 87</p>
                     </Col>
-                    <Col xs={{ span: 14, offset: 10 }} sm={{ span: 1 }} >
+                    <Col xs={{ span: 14, offset: 10 }} sm={{ span:1 }} md={{ span: 2, offset: 2}} >
+                    <div className="footerLogo">
                     <a className="logoFb" href="https://www.facebook.com/clezer/"><img className="logoFb" src={fb} alt="facebookLogo"/></a>
                     <a className="logoTwitter" href="https://twitter.com/clezerapp?lang=fr"><img className="logoTwitter" src={twitter} alt="facebookLogo"/></a>
+                    </div>
                     </Col>
                 </div>
             </Row>
