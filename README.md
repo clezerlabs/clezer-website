@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/clezerlabs/Clezer%20Website/_apis/build/status/Build%20Website)](https://dev.azure.com/clezerlabs/Clezer%20Website/_build/latest?definitionId=8)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
