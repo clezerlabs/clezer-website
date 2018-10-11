@@ -1,17 +1,12 @@
 import React from 'react';
-import VideoCover from "react-video-cover";
 import homeVid from "../assets/videos/homeVid.mp4";
 import iphone from "../assets/images/iPhone.png"
+import fb from "../assets/images/fb.png"
+import twitter from "../assets/images/twitter.png"
+import whiteLogo from "../assets/images/whiteLogo.png";
+import orangeLogo from "../assets/images/orangeLogo.png";
+
 import "./LandingPage.css"
-const videoOptions = {
-    src: homeVid,
-    autoPlay: true,
-    loop: true,
-    muted: true,
-};
-
-
-
 class LandingPage extends React.Component {
     constructor(props) {
         super(props);
@@ -19,49 +14,60 @@ class LandingPage extends React.Component {
     }
     render() {
         return (
-        <div className="HomeContainer">
-            <div className="VideoContainer" > 
-                    <VideoCover
-                        className="Video"
-                        videoOptions={videoOptions}
-                    />
-                    <div className="TitleContainer">
-                        <h2 >Collective.</h2>
-                    </div>
-                    <div className="Gradient">
-                    </div>
-                    <div className="TextContainer">
-                        <h3 className="AppTitle">Book together right from your group chat</h3>
-                        <p className="AppText">Book together your festival tickets, accommodation and transfers, from a simple conversation with your friends. Instantly split the payment.</p>
-                    </div>
-                    <div className="PhoneContainer">
-                        <img src={iphone} alt="iphone"/>
-                    </div>
-                    <div className="FormContainer">
-                        <form>
-                            <label>
-                                <input className="InputStyle" type="text" name="name" placeholder="Your Favorite Festival" />
-                            </label>
-                            <label>
-                                <input className="InputStyle" type="text" name="name" placeholder="Your e-mail" />
-                            </label>
-                            <input className="InputButtonStyle" type="submit" value="WIN 4 PASSES" />
-                        </form>
-                    </div>
+            <div id="Page">
+            <div id="container">
+            <video id="background_video" src={homeVid} autoPlay loop muted></video>
+            <div id="video_cover">
+                <div className="GradientOpacity">
+                </div>
+                <div className="Gradient">
+                </div></div>
+            <div id="overlay"></div>
+            <div className="TitleContainer">
+                <img className="TitleLogo" src={whiteLogo} alt=""/>
             </div>
-            <div className="Footer">
-            <div className="FooterContent">
-            <p className="Logo">Collective<span className="LogoDot">.</span></p>
-                <p className="FooterText">40 rue de l'arsenal - 33 300 Bordeaux</p>
-                <p className="FooterText">hello@collective.com</p>
-                <p className="FooterText">+33 6 23 56 12 87</p>
-            </div>
-                
-                <p className="CopyRight">© CLEZER Financial Technologie INC. All Rights Reserved.</p>
-            </div>
-            
-        </div>
+            <section id="main_content">
 
+                <div className="PhoneContainer">
+                            <img className="PhoneImage" src={iphone} alt="iphone"/>
+                </div>
+
+                <div id="head">
+                    <h1 className="sub_head">Chat for group booking</h1>
+                    <p className="info">Group book your festival tickets, accommodation and transfers, from a simple conversation with your friends</p>
+                    <div id="links"> 
+                    <form > 
+                            <input className="InputStyle" type="text" name="name" placeholder="Your Favorite Festival" />
+                            <input className="mailInputStyle" type="text" name="name" placeholder="Your e-mail" />
+                            <input className="InputButtonStyle" type="submit" value="WIN 4 PASSES" />
+                    </form>
+                </div>
+                </div>
+                
+               
+            </section>
+            
+            </div> 
+            <section style={{height:"10vh", zIndex: 2}}>
+            <div id="footer">
+                <img className="Logo" src={orangeLogo} alt=""/>
+                <div style={{display: "flex", flexDirection: "space-around", justifyContent:'center', alignItems:"center", width:"100vh"}}>
+                    <p className="Adress">40 rue de l'arsenal  33 300 Bordeaux</p>
+                    <p className="FooterText">hello@collective.com</p>
+                    <p className="FooterText">+33 6 23 56 12 87</p>
+                </div>
+                        
+                <div className="SocialLinks" >    
+                    <a  rel="noopener noreferrer" target="_blank" className="logoFb" href="https://www.facebook.com/clezer/"><img className="logoFb" src={fb} alt="facebookLogo"/></a>
+                    <a className="logoTwitter" href="https://twitter.com/clezerapp?lang=fr"><img className="logoTwitter" src={twitter} alt="facebookLogo"/></a>
+                </div> 
+                
+            </div> 
+            <div>
+                <p className="CopyRight">© 2018 Clezer Financial Technologies. All Rights Reserved.</p>
+            </div>
+            </section>
+          </div>
         );
     }
     
