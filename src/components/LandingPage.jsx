@@ -48,7 +48,7 @@ class LandingPage extends React.Component {
             </section>
             
             </div> 
-            <section style={{height:"20vh", zIndex: 3}}>
+            <section style={{height:"10vh", zIndex: 2}}>
             <div id="footer">
                 <img className="Logo" src={orangeLogo} alt=""/>
                 <div style={{display: "flex", flexDirection: "space-around", justifyContent:'center', alignItems:"center", width:"100vh"}}>
