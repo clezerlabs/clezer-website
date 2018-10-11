@@ -38,7 +38,7 @@ class LandingPage extends React.Component {
                     <div id="links"> 
                     <form > 
                             <input className="InputStyle" type="text" name="name" placeholder="Your Favorite Festival" />
-                            <input className="InputStyle" type="text" name="name" placeholder="Your e-mail" />
+                            <input className="mailInputStyle" type="text" name="name" placeholder="Your e-mail" />
                             <input className="InputButtonStyle" type="submit" value="WIN 4 PASSES" />
                     </form>
                 </div>
@@ -51,14 +51,21 @@ class LandingPage extends React.Component {
             <section style={{height:"20vh", zIndex: 3}}>
             <div id="footer">
                 <img className="Logo" src={orangeLogo} alt=""/>
-                        <p className="Adress">40 rue de l'arsenal  33 300 Bordeaux</p>
-                        <p className="FooterText">hello@collective.com</p>
-                        <p className="FooterText">+33 6 23 56 12 87</p>
+                <div style={{display: "flex", flexDirection: "space-around", justifyContent:'center', alignItems:"center", width:"100vh"}}>
+                    <p className="Adress">40 rue de l'arsenal  33 300 Bordeaux</p>
+                    <p className="FooterText">hello@collective.com</p>
+                    <p className="FooterText">+33 6 23 56 12 87</p>
+                </div>
                         
-                        <a  rel="noopener noreferrer" target="_blank" className="logoFb" href="https://www.facebook.com/clezer/"><img className="logoFb" src={fb} alt="facebookLogo"/></a>
-                        <a className="logoTwitter" href="https://twitter.com/clezerapp?lang=fr"><img className="logoTwitter" src={twitter} alt="facebookLogo"/></a>
-            
+                <div className="SocialLinks" >    
+                    <a  rel="noopener noreferrer" target="_blank" className="logoFb" href="https://www.facebook.com/clezer/"><img className="logoFb" src={fb} alt="facebookLogo"/></a>
+                    <a className="logoTwitter" href="https://twitter.com/clezerapp?lang=fr"><img className="logoTwitter" src={twitter} alt="facebookLogo"/></a>
+                </div> 
+                
             </div> 
+            <div>
+                <p className="CopyRight">© 2018 Clezer Financial Technologies. All Rights Reserved.</p>
+            </div>
             </section>
           </div>
         );
