@@ -210,7 +210,7 @@ body.boxed .wrapper-inner{
 /*Columns Widths*/
 .width-1	{width: 8.33333%;}
 .width-2	{width: 16.66667%;}
-.width-3	{width: 25%;}
+.width-3	{width: 24%;}
 .width-4	{width: 33.33333%;}
 .width-5	{width: 41.66667%;}
 .width-6	{width: 50%;}
@@ -4660,10 +4660,10 @@ pre code{
 .border-hover-purple:hover{border-color: #7b3697;}
 .border-purple-light{border-color: #b078c6;}
 .border-hover-purple-light:hover{border-color: #8f3faf;}
-.border-yellow{border-color: #f3b100;}
+.border-yellow{border-color: #FDD64D;}
 .border-hover-yellow:hover{border-color: #e2a50b;;}
 .border-yellow-light{border-color: #ffbe12;}
-.border-hover-yellow-light:hover{border-color: #f3b100;}
+.border-hover-yellow-light:hover{border-color: #FDD64D;}
 .border-orange{border-color: #e87f04;}
 .border-hover-orange:hover{border-color: #df6f0b;;}
 .border-orange-light{border-color: #f59d00;}
@@ -4751,10 +4751,10 @@ pre code{
 .bkg-purple-light{background: #913ee1; border-color: #913ee1;}
 .bkg-purple-dark{background: #441274; border-color: #441274;}
 .bkg-hover-purple-light:hover{background: #8f3faf; border-color: #8f3faf;}
-.bkg-yellow{background: #f3b100; border-color: #f3b100;}
+.bkg-yellow{background: #FDD64D; border-color: #FDD64D;}
 .bkg-hover-yellow:hover{background: #e2a50b; border-color: #e2a50b;}
 .bkg-yellow-light{background: #ffbe12; border-color: #ffbe12;}
-.bkg-hover-yellow-light:hover{background: #f3b100; border-color: #f3b100;}
+.bkg-hover-yellow-light:hover{background: #FDD64D; border-color: #FDD64D;}
 .bkg-orange{background: #e87f04; border-color: #e87f04;}
 .bkg-hover-orange:hover{background: #df6f0b; border-color: #df6f0b;}
 .bkg-orange-light{background: #f59d00; border-color: #f59d00;}
@@ -4840,10 +4840,10 @@ pre code{
 .color-hover-purple:hover{color: #7b3697;}
 .color-purple-light{color: #b078c6;}
 .color-hover-purple-light:hover{color: #8f3faf;}
-.color-yellow{color: #f3b100;}
+.color-yellow{color: #FDD64D;}
 .color-hover-yellow:hover{ color: #e2a50b;}
 .color-yellow-light{color: #ffbe12;}
-.color-hover-yellow-light:hover{color: #f3b100;}
+.color-hover-yellow-light:hover{color: #FDD64D;}
 .color-orange{color: #e87f04;}
 .color-hover-orange:hover{color: #df6f0b;}
 .color-orange-light{ color: #f59d00;}
