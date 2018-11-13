@@ -1,6 +1,10 @@
-# Google cloud deployment pipeline
+# Deploys the website to google cloud
 pool:
   vmImage: 'Ubuntu 16.04'
+
+# Triggers only on the master branch
+trigger:
+- master
 
 steps:
 - script: |
@@ -9,10 +13,13 @@ steps:
     curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
   displayName: 'Adding Google Cloud SDK repository'
 
-- script: sudo apt-get update && sudo apt-get install google-cloud-sdk
+- script: |
+    sudo apt-get update
+    sudo apt-get install google-cloud-sdk
   displayName: 'Installing Google Cloud SDK'
 
 - script: |
     gcloud auth activate-service-account --key-file service-account.json
-    gcloud app deploy
+    gcloud config set project clezer-website
+    gcloud app deploy --quiet
   displayName: 'Deploying to Google Cloud Platform'
