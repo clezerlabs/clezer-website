@@ -13,11 +13,6 @@ steps:
   displayName: 'Installing Google Cloud SDK'
 
 - script: |
-    export GOOGLE_APPLICATION_CREDENTIALS="./gcloud-deploy.prod.json"
-    gcloud auth login
-  displayName: 'Login in to Google Cloud Platform'
-
-- script: |
-    gcloud config set project clezer-website
+    gcloud auth activate-service-account --key-file service-account.json
     gcloud app deploy
   displayName: 'Deploying to Google Cloud Platform'
