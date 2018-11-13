@@ -1,0 +1,23 @@
+# Google cloud deployment pipeline
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+steps:
+- script: |
+    export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
+    echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+    curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  displayName: 'Adding Google Cloud SDK repository'
+
+- script: sudo apt-get update && sudo apt-get install google-cloud-sdk
+  displayName: 'Installing Google Cloud SDK'
+
+- script: |
+    export GOOGLE_APPLICATION_CREDENTIALS="./gcloud-deploy.prod.json"
+    gcloud auth login
+  displayName: 'Login in to Google Cloud Platform'
+
+- script: |
+    gcloud config set project clezer-website
+    gcloud app deploy
+  displayName: 'Deploying to Google Cloud Platform'
