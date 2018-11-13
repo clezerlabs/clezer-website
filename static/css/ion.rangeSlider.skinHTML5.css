@@ -33,17 +33,17 @@
 
 .irs-bar {
     height: 2px; top: 30px;
-    border-top: 1px solid #913ee1;
-    border-bottom: 1px solid #913ee1;
-    background: #913ee1;
+    border-top: 1px solid #FF5454;
+    border-bottom: 1px solid #FF5454;
+    background: #FF5454;
     background: linear-gradient(to top, rgba(66,139,202,1) 0%,rgba(127,195,232,1) 100%); /* W3C */
 }
     .irs-bar-edge {
         height: 2px; top: 30px;
         width: 14px;
-        border: 1px solid #913ee1;
+        border: 1px solid #FF5454;
         border-right: 0;
-        background: #913ee1;
+        background: #FF5454;
         background: linear-gradient(to top, rgba(66,139,202,1) 0%,rgba(127,195,232,1) 100%); /* W3C */
         border-radius: 16px 0 0 16px;
         -moz-border-radius: 16px 0 0 16px;
@@ -63,7 +63,7 @@
 .irs-slider {
     top: 26px;
     width: 10px; height: 10px;
-    border: 1px solid #913ee1;
+    border: 1px solid #FF5454;
     background: #DDD;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 1) 20%,rgba(255, 255, 255, 1) 100%); /* W3C */
     border-radius: 27px;
@@ -73,7 +73,7 @@
 }
 
 .irs-slider.state_hover, .irs-slider:hover {
-    background: #913ee1;
+    background: #FF5454;
 }
 
 .irs-min, .irs-max {
@@ -96,7 +96,7 @@
     font-size: 14px; line-height: 1.333;
     text-shadow: none;
     padding: 1px 8px;
-    background: #913ee1; /*CURSOR INDICATOR*/
+    background: #FF5454; /*CURSOR INDICATOR*/
     border-radius: 3px;
     -moz-border-radius: 3px;
 }
@@ -109,7 +109,7 @@
 }
 .irs-grid-pol {
     opacity: 0.5;
-    background: #913ee1;
+    background: #FF5454;
 }
 .irs-grid-pol.small {
     background: #999;
@@ -130,5 +130,5 @@
     margin-left: -3px;
     overflow: hidden;
     border: 3px solid transparent;
-    border-top-color: #913ee1;
+    border-top-color: #FF5454;
 }
