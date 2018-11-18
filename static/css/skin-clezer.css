@@ -763,6 +763,7 @@ body,
 .header .navigation > ul > li > a:hover{
 	color: #fff;
 	opacity: 1;
+    font-weight: bold;
 }
 .header .navigation > ul > li.current > a:hover{
 	color: #fff;
@@ -1360,7 +1361,7 @@ body,
 	color: #999;
 }
 .overlay-navigation ul li.current > a{
-	font-weight: normal;
+	font-weight: bold;
 }
 .overlay-navigation-wrapper .navigation-hide{
 	top: 0;
@@ -1433,6 +1434,7 @@ body,
 .overlay-navigation > ul > li.current > a,
 .overlay-navigation ul li.current > a:hover{
 	color: #000;
+    font-weight: bold;
 }
 
 /* Overlay Nav Widget */
@@ -2877,7 +2879,6 @@ textarea.required-field{
 .footer .post-date{
 	font-size: 1rem;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
 /* Footer Background */
@@ -2979,7 +2980,6 @@ textarea.required-field{
 .sidebar .post-date{
 	font-size: 1rem;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
 /*------------------------------------------------------------------
